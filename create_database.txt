@@ -1,0 +1,40 @@
+create database rest_api ;
+grant all on rest_api.* to 'rest_user'@'localhost' identified by 'rest_pass' ;
+
+use rest_api ;
+create table user(
+id INT PRIMARY KEY,
+name VARCHAR(255),
+email VARCHAR(255),
+fact VARCHAR(255)
+) ;
+
+INSERT INTO user VALUES(1,'Bill','bgates@oamk.fi','I am Bill') ;
+INSERT INTO user VALUES(2,'Kate','cgates@oamk.fi','I am Kate') ;
+INSERT INTO user VALUES(3,'Toom','dgates@oamk.fi','I am Toom') ;
+INSERT INTO user VALUES(4,'Shim','egates@oamk.fi','I am Shim') ;
+
+create table age_data(
+id INT PRIMARY KEY auto_increment,
+city VARCHAR(45),
+age INT
+) ;
+
+insert into age_data (city,age) values('Oulu',6) ;
+insert into age_data (city,age) values('Helsinki',16) ;
+ 
+insert into age_data (city,age) values('Javascript',10) ;
+insert into age_data (city,age) values('Javascript',3) ;
+insert into age_data (city,age) values('Javascript',5) ;
+insert into age_data (city,age) values('Javascript',7) ;
+insert into age_data (city,age) values('Oulu',6) ;
+insert into age_data (city,age) values('Helsinki',2) ;
+insert into age_data (city,age) values('Oulu',26) ;
+insert into age_data (city,age) values('Kokkola',11) ;
+insert into age_data (city,age) values('Kokkola',34) ;
+insert into age_data (city,age) values('Kokkola',23) ;
+insert into age_data (city,age) values('Kokkola',45) ;
+insert into age_data (city,age) values('Rovaniemi',22) ;
+insert into age_data (city,age) values('Rovaniemi',44) ;
+insert into age_data (city,age) values('Rovaniemi',33) ;
+insert into age_data (city,age) values('Rovaniemi',5) ;
